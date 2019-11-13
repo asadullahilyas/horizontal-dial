@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="editor_control_bottom_container_height">50dp</dimen>
+    <dimen name="editor_control_bottom_container_top_margin">15dp</dimen>
+    <dimen name="editor_control_crop_options_height">40dp</dimen>
+    <dimen name="editor_control_crop_options_inter_distance">30dp</dimen>
+    <dimen name="horizontal_dial_pointer_width">40dp</dimen>
+    <dimen name="horizontal_dial_pointer_height">40dp</dimen>
+    <dimen name="horizontal_dial_button_width">40dp</dimen>
+    <dimen name="horizontal_dial_button_height">40dp</dimen>
+    <dimen name="editor_control_icon_width">40dp</dimen>
+    <dimen name="editor_control_icon_height">40dp</dimen>
+</resources>

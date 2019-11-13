@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/startButton"
+        android:layout_width="@dimen/horizontal_dial_button_width"
+        android:layout_height="@dimen/horizontal_dial_button_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:src="@drawable/edit_icon_minus_icon" />
+
+    <ImageView
+        android:id="@+id/endButton"
+        android:layout_width="@dimen/horizontal_dial_button_width"
+        android:layout_height="@dimen/horizontal_dial_button_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:src="@drawable/edit_icon_plus_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/endButton"
+        android:layout_alignBottom="@id/endButton"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toStartOf="@id/endButton"
+        android:layout_toLeftOf="@id/endButton"
+        android:layout_toEndOf="@id/startButton"
+        android:layout_toRightOf="@id/startButton"
+        android:overScrollMode="never" />
+
+    <ImageView
+        android:id="@+id/resetButton"
+        android:layout_width="@dimen/horizontal_dial_pointer_width"
+        android:layout_height="@dimen/horizontal_dial_pointer_height"
+        android:layout_below="@id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:src="@drawable/triangle" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/recyclerView"
+        android:layout_alignBottom="@id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@color/editor_control_green" />
+</RelativeLayout>
